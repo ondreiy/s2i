@@ -12,7 +12,7 @@ RUN INSTALL_PKGS="tar unzip nginx" && \
 	yum clean all && \
 	rm -rf /var/cache/yum
 
-COPY s2i /usr/libexec/s2i
+COPY s2i /usr/libexec/s2i/
 
 EXPOSE 8080
 
